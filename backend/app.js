@@ -12,6 +12,8 @@ const csurf = require('csurf');
 // Error handling
 const debug = require('debug');
 
+require('./models/User');
+
 const usersRouter = require('./routes/api/users');
 const tweetsRouter = require('./routes/api/tweets');
 const csrfRouter = require('./routes/api/csrf');
@@ -36,6 +38,8 @@ app.use(
 		}
 	})
 )
+
+
 
 // Attach Express routers
 app.use('/api/users', usersRouter);
