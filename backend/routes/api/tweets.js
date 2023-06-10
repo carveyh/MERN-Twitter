@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-/* GET users listing. */
+/* GET tweets listing. */
 router.get('/', function(req, res, next) {
   // res.send('Respond with a user resource bruhhh');
   // res.json() send response with a JSON body.
